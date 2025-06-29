@@ -2,7 +2,7 @@
 # Makefile for the linux kernel.
 #
 
-CONFIG_SHELL=/bin/bash
+CONFIG_SHELL := /bin/bash
 
 obj-y                          := main.o version.o mounts.o
 ifneq ($(CONFIG_BLK_DEV_INITRD),y)
