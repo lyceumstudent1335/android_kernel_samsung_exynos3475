@@ -3,6 +3,8 @@
 #
 
 CONFIG_SHELL := /bin/bash
+echo "CC = $(CC)"
+echo "CFLAGS = $(KBUILD_CFLAGS)"
 
 obj-y                          := main.o version.o mounts.o
 ifneq ($(CONFIG_BLK_DEV_INITRD),y)
